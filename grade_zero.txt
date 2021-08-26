@@ -1,0 +1,43 @@
+
+############################
+ CREATE TEST
+############################
+
+TEST 1: Create 3 replicas of every key
+TEST 1 SCORE..................: 0 / 3
+
+############################
+ DELETE TEST
+############################
+
+TEST 1: Delete 3 replicas of every key
+TEST 2: Attempt delete of an invalid key
+TEST 1 SCORE..................: 0 / 3
+TEST 2 SCORE..................: 0 / 4
+
+############################
+ READ TEST
+############################
+
+TEST 1: Read a key. Check for correct value being read at least in quorum of replicas
+TEST 1 SCORE..................: 0 / 3
+TEST 2 SCORE..................: 0 / 9
+TEST 3 PART 1 SCORE..................: 0 / 9
+TEST 3 PART 2 SCORE..................: 0 / 10
+TEST 4 SCORE..................: 0 / 6
+TEST 5 SCORE..................: 0 / 3
+
+############################
+ UPDATE TEST
+############################
+
+TEST 1: Update a key. Check for correct value being updated at least in quorum of replicas
+TEST 1 SCORE..................: 0 / 3
+TEST 2 SCORE..................: 0 / 9
+TEST 3 PART 1 SCORE..................: 0 / 9
+TEST 3 PART 2 SCORE..................: 0 / 10
+TEST 4 SCORE..................: 0 / 6
+TEST 5 SCORE..................: 0 / 3
+
+ESTIMATED OVERALL GRADE: 0 / 90
+
